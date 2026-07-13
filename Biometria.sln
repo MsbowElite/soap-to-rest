@@ -1,0 +1,33 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.7.11919.86 stable
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CsharpSoap", "csharp-soap\CsharpSoap.csproj", "{6A4B3D02-1C44-4F24-9C5D-8B2A3B1A1111}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CsharpRest", "csharp-rest\CsharpRest.csproj", "{6A4B3D02-1C44-4F24-9C5D-8B2A3B1A2222}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CsharpRest.Tests", "csharp-rest-tests\CsharpRest.Tests.csproj", "{6A4B3D02-1C44-4F24-9C5D-8B2A3B1A3333}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6A4B3D02-1C44-4F24-9C5D-8B2A3B1A1111}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A4B3D02-1C44-4F24-9C5D-8B2A3B1A1111}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A4B3D02-1C44-4F24-9C5D-8B2A3B1A1111}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A4B3D02-1C44-4F24-9C5D-8B2A3B1A1111}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A4B3D02-1C44-4F24-9C5D-8B2A3B1A2222}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A4B3D02-1C44-4F24-9C5D-8B2A3B1A2222}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A4B3D02-1C44-4F24-9C5D-8B2A3B1A2222}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A4B3D02-1C44-4F24-9C5D-8B2A3B1A2222}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A4B3D02-1C44-4F24-9C5D-8B2A3B1A3333}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A4B3D02-1C44-4F24-9C5D-8B2A3B1A3333}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A4B3D02-1C44-4F24-9C5D-8B2A3B1A3333}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A4B3D02-1C44-4F24-9C5D-8B2A3B1A3333}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

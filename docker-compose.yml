@@ -1,0 +1,14 @@
+services:
+  csharp-soap:
+    build: ./csharp-soap
+    ports:
+      - "8081:8080"
+
+  csharp-rest:
+    build: ./csharp-rest
+    ports:
+      - "8080:8080"
+    depends_on:
+      - csharp-soap
+    environment:
+      - SOAP_BASE_URL=http://csharp-soap:8080
