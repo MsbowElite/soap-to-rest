@@ -1,5 +1,6 @@
 using System.Xml;
 using System.Net;
+using System.Globalization;
 using CsharpRest.Application.Constants;
 using CsharpRest.Application.Interfaces;
 using CsharpRest.Domain.Dto;
@@ -36,7 +37,7 @@ public class BiometriaMapper : IBiometriaMapper
                             status = sNode.InnerText;
 
                         var scNode = innerDoc.SelectSingleNode("//*[local-name()='matchScore']");
-                        if (scNode != null && double.TryParse(scNode.InnerText, out var parsed))
+                        if (scNode != null && double.TryParse(scNode.InnerText, NumberStyles.Any, CultureInfo.InvariantCulture, out var parsed))
                             score = parsed;
                     }
                     catch (XmlException)
@@ -54,7 +55,7 @@ public class BiometriaMapper : IBiometriaMapper
                     status = statusNode.InnerText;
 
                 var scoreNode = doc.SelectSingleNode("//*[local-name()='matchScore']");
-                if (scoreNode != null && double.TryParse(scoreNode.InnerText, out var parsed2))
+                if (scoreNode != null && double.TryParse(scoreNode.InnerText, NumberStyles.Any, CultureInfo.InvariantCulture, out var parsed2))
                     score = parsed2;
             }
 
